@@ -6,7 +6,7 @@ module.exports = {
     vendor: './src/vendor.js',
   },
   output: {
-    filename: '[name].js',  //app.js、vendor.js が出力される
+    filename: '[name].[contenthash].js', //エントリ名.ハッシュ.ten_file.js
   },
 };
 
