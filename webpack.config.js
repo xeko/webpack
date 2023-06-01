@@ -1,9 +1,12 @@
 const path = require('path');  //path モジュールの読み込み
  
 module.exports = {
-  entry: ['./src/t1.js', './src/t2.js'],
+  entry: {
+    app: './src/app.js',
+    vendor: './src/vendor.js',
+  },
   output: {
-    filename: 'bundle.js',  //bundle.js にまとめて出力
+    filename: '[name].js',  //app.js、vendor.js が出力される
   },
 };
 
